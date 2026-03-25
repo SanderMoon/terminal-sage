@@ -23,7 +23,7 @@ With [lazy.nvim](https://github.com/folke/lazy.nvim):
 
 ```lua
 {
-  "sandermoonemans/terminal-sage",
+  "SanderMoon/terminal-sage",
   lazy = false,
   priority = 1000,
   config = function()
@@ -42,7 +42,7 @@ With the [WezTerm plugin system](https://wezfurlong.org/wezterm/config/plugins.h
 local wezterm = require("wezterm")
 local config = wezterm.config_builder()
 
-local terminal_sage = wezterm.plugin.require("https://github.com/sandermoonemans/terminal-sage")
+local terminal_sage = wezterm.plugin.require("https://github.com/SanderMoon/terminal-sage")
 terminal_sage.apply_to_config(config)
 
 return config
@@ -59,7 +59,7 @@ source-file /path/to/terminal-sage/tmux/terminal-sage.tmux.conf
 Or if you clone to `~/.tmux/themes`:
 
 ```sh
-git clone https://github.com/sandermoonemans/terminal-sage ~/.tmux/themes/terminal-sage
+git clone https://github.com/SanderMoon/terminal-sage ~/.tmux/themes/terminal-sage
 ```
 
 ```tmux
