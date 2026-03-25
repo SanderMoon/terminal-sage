@@ -2,6 +2,11 @@ local wezterm = require("wezterm")
 
 local M = {}
 
+-- foreground uses fg_dim (#C8C8BC) rather than fg (#E4E4DC) intentionally:
+-- raw terminal text is slightly subdued, while nvim's Normal highlight uses
+-- the brighter fg — this creates a natural depth between editor and shell.
+-- background uses bg_dark (#111411) so the nvim editor area (bg #161916)
+-- and tmux status bar sit as a lighter layer on top of the terminal canvas.
 M.colors = {
   foreground = "#C8C8BC",
   background = "#111411",

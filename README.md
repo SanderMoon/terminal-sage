@@ -89,6 +89,15 @@ yellow = "#C9B458"
 blue = "#6A9FCF"
 purple = "#A87FBF"
 cyan = "#6EB5A0"
+bg_code = "#1E211E"
+card_hover = "#282C28"
+green_dark = "#6DAA70"
+br_red = "#D4817F"
+br_green = "#A5D4A7"
+br_yellow = "#D8CA7B"
+br_blue = "#94BBD9"
+br_purple = "#C4A4D4"
+br_cyan = "#98D0BF"
 ```
 
 Then use the palette names in your module styles (e.g. `style = "bold green"`). See [`starship/starship.toml`](starship/starship.toml) for a full example config.

@@ -14,7 +14,7 @@ function M.get(c)
     Normal = { fg = c.fg, bg = c.bg },
     NormalFloat = { fg = c.fg, bg = c.bg_alt },
     NormalNC = { fg = c.fg, bg = c.bg },
-    Cursor = { fg = c.bg, bg = c.fg },
+    Cursor = { fg = c.bg, bg = c.green },
     lCursor = { link = "Cursor" },
     CursorIM = { link = "Cursor" },
     CursorLine = { bg = c.bg_code },
