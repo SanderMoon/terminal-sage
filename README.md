@@ -1,6 +1,6 @@
 # Terminal Sage
 
-A calm, nature-inspired dark color scheme for your terminal environment. Consistent colors across Neovim, WezTerm, and tmux.
+A calm, nature-inspired dark color scheme for your terminal environment. Consistent colors across Neovim, WezTerm, tmux, and Starship.
 
 ## Palette
 
@@ -65,6 +65,33 @@ git clone https://github.com/SanderMoon/terminal-sage ~/.tmux/themes/terminal-sa
 ```tmux
 source-file ~/.tmux/themes/terminal-sage/tmux/terminal-sage.tmux.conf
 ```
+
+### Starship
+
+Add the palette to your `~/.config/starship.toml`:
+
+```toml
+palette = "terminal-sage"
+
+[palettes.terminal-sage]
+bg_dark = "#111411"
+bg = "#161916"
+bg_alt = "#1C1F1C"
+surface = "#222522"
+divider = "#363A36"
+fg = "#E4E4DC"
+fg_dim = "#C8C8BC"
+fg_muted = "#8A8A7E"
+fg_dark = "#606058"
+green = "#7DB880"
+red = "#C45B5B"
+yellow = "#C9B458"
+blue = "#6A9FCF"
+purple = "#A87FBF"
+cyan = "#6EB5A0"
+```
+
+Then use the palette names in your module styles (e.g. `style = "bold green"`). See [`starship/starship.toml`](starship/starship.toml) for a full example config.
 
 ## License
 

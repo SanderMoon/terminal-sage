@@ -1,0 +1,111 @@
+# Example Starship config using Terminal Sage colors
+# Copy this file to ~/.config/starship.toml, or just grab the palette block above.
+
+palette = "terminal-sage"
+
+[palettes.terminal-sage]
+bg_dark = "#111411"
+bg = "#161916"
+bg_alt = "#1C1F1C"
+surface = "#222522"
+divider = "#363A36"
+fg = "#E4E4DC"
+fg_dim = "#C8C8BC"
+fg_muted = "#8A8A7E"
+fg_dark = "#606058"
+green = "#7DB880"
+red = "#C45B5B"
+yellow = "#C9B458"
+blue = "#6A9FCF"
+purple = "#A87FBF"
+cyan = "#6EB5A0"
+
+format = """
+$hostname\
+$directory\
+$git_branch\
+$git_status\
+$python\
+$nodejs\
+$lua\
+$docker_context\
+$container\
+$env_var\
+$jobs\
+$cmd_duration\
+$status\
+$line_break\
+$character"""
+
+[container]
+format = "[$symbol \\[$name\\]]($style) "
+symbol = "\U000F0868"
+style = "blue"
+
+[env_var.CUDA_VISIBLE_DEVICES]
+format = "[GPU:$env_value]($style) "
+style = "green"
+
+[jobs]
+symbol = "\U000F0209 "
+style = "yellow"
+number_threshold = 1
+
+[status]
+disabled = false
+format = "[$symbol$status]($style) "
+symbol = "\u2718 "
+style = "red"
+
+[hostname]
+ssh_only = true
+format = "[󰃀 $hostname]($style) "
+style = "bold red"
+
+[directory]
+truncation_length = 3
+truncation_symbol = ".../"
+style = "bold green"
+
+[git_branch]
+symbol = "\ue0a0 "
+format = "[$symbol$branch(:$remote_branch)]($style) "
+style = "blue"
+
+[git_status]
+style = "yellow"
+ahead = "\u21e1${count}"
+behind = "\u21e3${count}"
+diverged = "\u21d5\u21e1${ahead_count}\u21e3${behind_count}"
+modified = "~${count}"
+untracked = "?${count}"
+staged = "+${count}"
+
+[python]
+symbol = "\U000F0320 "
+format = "[$symbol$version( \\($virtualenv\\))]($style) "
+style = "yellow"
+
+[nodejs]
+symbol = "\U000F0399 "
+format = "[$symbol$version]($style) "
+style = "green"
+
+[lua]
+symbol = "\U000F186E "
+format = "[$symbol$version]($style) "
+style = "blue"
+
+[docker_context]
+symbol = "\U000F0868 "
+format = "[$symbol$context]($style) "
+style = "blue"
+
+[cmd_duration]
+min_time = 2000
+format = "[\U000F0020 $duration]($style) "
+style = "fg_dark"
+
+[character]
+success_symbol = "[>](bold green)"
+error_symbol = "[>](bold red)"
