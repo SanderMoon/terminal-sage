@@ -2,6 +2,8 @@
 
 A calm, nature-inspired dark color scheme for your terminal environment. Consistent colors across Neovim, WezTerm, tmux, and Starship.
 
+![Terminal Sage screenshot](docs/images/screenshot.png)
+
 ## Palette
 
 | Role | Color | Hex |
